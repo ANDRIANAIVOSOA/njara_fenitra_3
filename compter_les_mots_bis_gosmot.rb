@@ -28,7 +28,7 @@ def get_file_as_string(filename,grosmot)
 	end
 	puts "------------------------------------------------------------"
 	puts "Il a #{increment} grosmots dans l'oeuvre de Shakeaspeare !"
-	puts "------------------------------------------------------------"²²²²²²²²²²²²²
+	puts "------------------------------------------------------------"
 	return tabAssoc
 end
 

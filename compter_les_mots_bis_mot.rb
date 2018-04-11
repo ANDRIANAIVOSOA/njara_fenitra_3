@@ -5,7 +5,7 @@
 def get_file_as_string(filename)
 	dictionnaire = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
 	tabAssoc = Hash.new(0) #initialiser la valeur d'un tableau associatif
-	data = ''
+	
 	f = File.open(filename, "r")
 	f.each_line do |line|
 		lettre = line.downcase
@@ -22,7 +22,7 @@ def get_file_as_string(filename)
 	return tabAssoc
 end
 
-txt_data = get_file_as_string('text.txt') # == txt_data.to_s
+txt_data = get_file_as_string('shakespeare.txt') # == txt_data.to_s
 #espace = 1, retur à la ligne = 1
 
 #varTab = txt_data.split" " #tableau par mot
